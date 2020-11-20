@@ -1,0 +1,66 @@
+
+
+.btn{
+  @include transition(all .2s linear);
+  line-height: 1.428571429;
+}
+
+
+.btn{
+  border:none;
+  @include transition(all .1s linear);
+}
+
+.btn-default{
+  @include gradient-horizontal(darken($btn-default-bg, 5%), darken($btn-default-bg, 10%));
+    background-size: 200% auto;
+
+  &:hover{
+    @include gradient-horizontal(darken($btn-default-bg, 5%), darken($btn-default-bg, 10%));
+    background-position: center center; 
+  }
+}
+
+.btn-primary{
+  @include gradient-horizontal(#FF6975, #FF0060);
+    background-size: 200% auto;
+
+  &:hover{
+    @include gradient-horizontal(#FF6975, #FF0060);
+    background-position: center center; 
+  }
+}
+
+.btn-info{
+  @include gradient-horizontal($brand-info, #F76B1C );
+    background-size: 200% auto;
+
+  &:hover{
+    @include gradient-horizontal($brand-info, #F76B1C);
+    background-position: center center; 
+  }
+}
+
+.btn-warning{
+  @include gradient-horizontal($brand-warning, darken($brand-warning, 15%));
+    background-size: 200% auto;
+
+  &:hover{
+    @include gradient-horizontal($brand-warning, darken($brand-warning, 15%));
+    background-position: center center; 
+  }
+}
+
+.btn-danger{
+  @include gradient-horizontal($brand-danger, darken($brand-danger, 15%));
+    background-size: 200% auto;
+
+  &:hover{
+    @include gradient-horizontal($brand-danger, darken($brand-danger, 15%));
+    background-position: center center; 
+  }
+}
+
+
+
+

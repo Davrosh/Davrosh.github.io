@@ -1,0 +1,32 @@
+.carousel-caption{
+  position: relative;
+  padding: 0;
+  text-align: left;
+  text-shadow:none;
+  bottom: inherit;
+  left:0;
+  right: 0;
+  color: $text-color;
+
+}
+
+.carousel-indicators{
+  left: 0;
+  width: 100%;
+  margin-left: 0;
+  bottom: inherit;
+  margin-top: -9px;
+
+  li{
+    border-color: $gray-base;
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.carousel-indicators .active{
+  width: 14px;
+  height: 14px;
+  margin: 1px;
+  background-color: $gray-base;
+}

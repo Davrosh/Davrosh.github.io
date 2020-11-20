@@ -1,0 +1,15 @@
+// Imports fonts that you will used in the application or in the template
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Oswald');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+// Import all your dependencies
+@import "lib/_bootstrap";
+
+// Import the base template
+@import "lib/_template";
+
+// Import your custom SCSS
+@import "mashup-example";
+
+

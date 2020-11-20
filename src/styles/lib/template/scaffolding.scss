@@ -1,0 +1,68 @@
+body{
+  @include gradient-vertical(rgba(255,0,96,1), rgba(255,105,117,1));
+  &.white{
+    background-color:white;
+    background-image: none;
+  }
+}
+
+.white-text-container{
+  h1,h2,h3,h4,h5, p, .fa-icon, a{
+    color: white;
+  }
+}
+
+.content-wrapper{
+  position: relative;
+  z-index: 1;
+}
+.section-container{
+  padding: 60px 0 40px;
+}
+
+.work-experience{
+  margin-bottom: 40px;
+  &:last-of-type{
+    margin-bottom: 0;
+  }  
+}
+
+.footer-container{
+  padding: 20px 0 30px;
+}
+
+.background-color-layer{
+  background-size: cover;
+  opacity:0.15;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -1;
+  top:0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom:30%;
+  box-shadow: inset 0 -40px 60px 10px $link-color;
+
+}
+
+.card{
+  border-radius: .25rem;
+
+  background-color: white;
+  border: 1px solid rgba(0,0,0,.125);
+  margin-bottom: 3rem;
+
+  h2,.h2{
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+
+  .card-block{
+    padding: 4rem;
+    @media (min-width: $screen-md-min) {
+      padding: 6rem;
+    }
+    
+  }
+}

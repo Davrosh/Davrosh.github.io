@@ -1,0 +1,13 @@
+
+.form-control{
+  box-shadow: none;
+  &:focus {
+    border-color: transparent;
+    outline: 0;
+    box-shadow: none;
+  }
+}
+
+label{
+  font-weight: normal;
+}
