@@ -52,8 +52,10 @@
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "devicon": "^2.2.0",
     "dotenv-webpack": "^1.5.4",
     "jquery": "^3.2.1",
+    "jquery-touchswipe": "^1.6.19",
     "normalize.css": "^7.0.0",
     "scrollreveal": "^3.3.6"
   }

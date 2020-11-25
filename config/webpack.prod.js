@@ -56,8 +56,7 @@ module.exports = {
         include: srcDir
       },
       {
-        test: /\.scss$/,
-        exclude: /node_modules/,
+        test: /\.(sa|sc|c)ss$/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: [
@@ -157,7 +156,12 @@ module.exports = {
       new Dotenv({
         path: path.resolve(__dirname, '..', '.env'),
         safe: false
-      })
+      }),
+      // TODO: get this to work. Added this to get data to work in the templates.
+      new HtmlWebpackPlugin({
+        template: path.join(srcDir, "pages", "index.hbs"),
+        templateParameters: require(path.join(srcDir, "data", "projects.json")),
+      }),
     ]
   )
 }

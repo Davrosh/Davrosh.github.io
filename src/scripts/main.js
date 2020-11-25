@@ -1,5 +1,9 @@
 
 import ScrollReveal from 'scrollreveal'
+
+
+
+
 // Export your custom function for declarative use
 export { scrollRevelation }
 

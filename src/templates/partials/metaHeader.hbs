@@ -11,13 +11,16 @@
 
   <!-- Disable tap highlight on IE -->
   <meta name="msapplication-tap-highlight" content="no">
-  
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
-  <link href="./assets/favicon.ico" rel="icon">
 
-  <title>{{ title }}</title>  
+  {{!-- <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
+  <link href="./assets/favicon.ico" rel="icon"> --}}
+
+  <link rel="icon" type="image/svg+xml" href="/assets/loading.svg">
+  <link rel="alternate icon" href="/assets/loading.ico">
+  <link rel="mask-icon" href="/assets/loading.svg" color="#ff8a01">
+
+  <title>{{ title }}</title>
 
 </head>
 
 <body class="{{#ifCond body '==' 'present' }}white{{/ifCond}}">
-

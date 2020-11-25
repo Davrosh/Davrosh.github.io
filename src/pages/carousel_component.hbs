@@ -1,0 +1,62 @@
+<div class="card">
+    <div class="card-block">
+        <h2>{{title}}</h2>
+
+
+        {{!-- 
+        {{#each photos as |photo|}}
+        <div>{{photo.title}}</div>
+        {{/each}} --}}
+
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-touch="true">
+
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+
+                {{#each photos as |photo|}}
+                {{#if @first}}
+                <div class="item active">
+                    {{else}}
+                    <div class="item">
+                        {{/if}}
+                        <img src="{{photo.url}}" class="img-responsive" alt="...">
+                        <div class="carousel-caption">
+                            <h3 class="h5">{{photo.title}}</h3>
+                            <p class="text-center">{{{photo.caption}}}</p>
+                            <div class="pull-left">
+                                <a class="fa-icon fa-icon-2x" href="{{photo.source}}" title="Go to source">
+                                    <i class="fa fa-github"></i>
+                                </a>
+                            </div>
+                            <div class="pull-right">
+                                <a class="fa-icon fa-icon-2x" href="{{photo.demo}}" title="Live demo">
+                                    <i class="fa fa-external-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    {{#each photos as |photo|}}
+                    {{#if @first}}
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    {{else}}
+                    <li data-target="#carousel-example-generic" data-slide-to="{{@index}}"></li>
+                    {{/if}}
+                    {{/each}}
+                </ol>
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+    </div>

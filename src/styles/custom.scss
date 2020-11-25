@@ -1,0 +1,43 @@
+$brand-primary: orange; // #337ab7
+$brand-success: #5cb85c;
+$brand-info: #f7981c;
+$brand-warning: #f0ad4e;
+$brand-danger: #d9534f;
+
+
+$btn-default-bg: $brand-primary;
+
+body {
+    @include gradient-vertical($brand-primary, lighten($brand-primary, 10%));
+}
+
+.btn-primary{
+    @include gradient-horizontal($brand-primary, lighten($brand-primary, 10%));
+  
+    &:hover{
+      @include gradient-horizontal($brand-primary, lighten($brand-primary, 10%));
+    }
+  }
+
+.card {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+[class^="devicon"] {
+  font-size: 1.5em;
+}
+
+.fa-heart {
+  color: red;
+}
+
+// /* if you want to change the original color */
+// [class^="devicon"] path {
+//   fill: #4691f6;
+// }
+
+// *:not(.card) {
+//   text-shadow: 0.5px 0px black;
+// }

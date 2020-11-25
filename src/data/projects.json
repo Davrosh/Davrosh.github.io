@@ -1,0 +1,25 @@
+{
+    "projects": [
+        {
+          "url": "./assets/images/img-05.jpg",
+          "title": "Jules for Bastion",
+          "caption": "<i class='devicon-vuejs-plain colored'></i>",
+          "source": "https://github.com/Davrosh/natours",
+          "demo": "https://agile-savannah-99658.herokuapp.com/"
+        },
+        {
+          "url": "./assets/images/img-06.jpg",
+          "title": "Jules for Bastard",
+          "caption": "2018",
+          "source": "https://github.com/Davrosh/natours",
+          "demo": "https://agile-savannah-99658.herokuapp.com/"
+        },
+        {
+          "url": "./assets/images/img-01.jpg",
+          "title": "Jules for Baskin",
+          "caption": "2019",
+          "source": "https://github.com/Davrosh/natours",
+          "demo": "https://agile-savannah-99658.herokuapp.com/"
+        }
+      ]
+}
