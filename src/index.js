@@ -8,7 +8,7 @@ import "./styles/main.scss";
 import "./scripts/lib";
 
 // Import your custom function
-import { scrollRevelation } from "./scripts/main";
+import { scrollRevelation , sendMail} from "./scripts/main";
 
 // Import all assets for webpack compilation
 function importAll(r) {
@@ -19,6 +19,7 @@ importAll(require.context("./assets", true, /\.(png|jpe?g|svg)$/));
 // Declare which function are accessible to the browser
 Object.assign(window, {
   scrollRevelation,
+  sendMail
 });
 
 $(function () {
@@ -36,4 +37,12 @@ $(function () {
     },
   });
 });
+
+$(function () {
+  $("#contact").click(function() {
+    sendMail();
+  });
+});
+
+
 
