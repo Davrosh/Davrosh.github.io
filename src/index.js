@@ -1,6 +1,9 @@
 // Import main SCSS for webpack compilation
 import "./styles/main.scss";
 
+
+// import "devicon/devicon.css";
+
 // Import all JS lib for webpack compilation
 import "./scripts/lib";
 

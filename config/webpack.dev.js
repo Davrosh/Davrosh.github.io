@@ -4,7 +4,7 @@ const recursive = require("recursive-readdir-sync");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const Dotenv = require("dotenv-webpack");
 const srcDir = path.resolve(__dirname, "..", "src");
-const distDir = path.resolve(__dirname, "..", "dist");
+const distDir = path.resolve(__dirname, "..", "docs");
 const { NODE_ENV = "development" } = process.env;
 
 function getPagesPath() {

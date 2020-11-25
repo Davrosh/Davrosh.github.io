@@ -6,7 +6,7 @@ const CompressionPlugin = require('compression-webpack-plugin')
 const Dotenv = require('dotenv-webpack')
 const recursive = require('recursive-readdir-sync')
 const srcDir = path.resolve(__dirname, '..', 'src')
-const distDir = path.resolve(__dirname, '..', 'dist')
+const distDir = path.resolve(__dirname, '..', 'docs')
 const { NODE_ENV = 'development' } = process.env
 
 function getPagesPath() {

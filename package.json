@@ -8,10 +8,10 @@
     "node": ">=6"
   },
   "scripts": {
-    "clean": "rimraf dist",
+    "clean": "rimraf docs",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --colors --port 3000",
-    "build": "npm run clean && NODE_ENV=production webpack && mv dist docs",
+    "build": "npm run clean && NODE_ENV=production webpack && echo 'andyberger.dev' >> docs/CNAME",
     "lint": "eslint src config",
     "lint:fix": "npm run lint -- --fix",
     "deploy:now": "npm run build && cd dist && now --static -p -n mashup-template  && cd ..",
