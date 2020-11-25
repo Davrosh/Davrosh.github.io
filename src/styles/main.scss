@@ -1,7 +1,8 @@
 // Imports fonts that you will used in the application or in the template
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Oswald');
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Oswald");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
+@import url("https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css");
 
 // Import all your dependencies
 @import "lib/_bootstrap";
@@ -12,4 +13,3 @@
 // Import your custom SCSS
 @import "mashup-example";
 @import "custom";
-
