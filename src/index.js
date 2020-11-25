@@ -39,7 +39,7 @@ $(function () {
 });
 
 $(function () {
-  $("#contact").click(function() {
+  $("#contact-btn").click(function() {
     sendMail();
   });
 });
