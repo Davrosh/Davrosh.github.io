@@ -17,5 +17,5 @@ function sendMail() {
   var subject = $('#contact #subject').val();
   var email = $('#contact #email').val();
   var message = $('#contact textarea').val();
-  window.location.href = 'mailto:mail@company.com?subject=The subject - ' + subject + ' (' + email + ')' + '&body=' + message;
+  window.location.href = 'mailto:hello@andyberger.dev?subject=' + subject + ' (' + email + ')' + '&body=' + message;
 };
